@@ -161,13 +161,13 @@ class Section extends Component {
 		/* section head */
 		const sectionHeadEl = this.createElement('div', 'section__head');
 
-		const sectionHeadTitleEl = this.createElement(
+		const cardsSummaryTitleEl = this.createElement(
 			'h2',
 			'cards-summary__title',
 			'Reliable, efficient delivery'
 		);
 
-		const sectionHeadSubtitleEl = this.createElement(
+		const cardsSummarySubtitleEl = this.createElement(
 			'p',
 			'cards-summary__subtitle'
 		);
@@ -178,17 +178,17 @@ class Section extends Component {
 			'Powered by Technology'
 		);
 
-		sectionHeadSubtitleEl.appendChild(sectionHeadSubtitleTextEl);
+		cardsSummarySubtitleEl.appendChild(sectionHeadSubtitleTextEl);
 
-		const sectionHeadDescriptionEl = this.createElement(
+		const cardsSummaryDescriptionEl = this.createElement(
 			'p',
 			'cards-summary__desc',
 			'Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful'
 		);
 
-		sectionHeadEl.appendChild(sectionHeadTitleEl);
-		sectionHeadEl.appendChild(sectionHeadSubtitleEl);
-		sectionHeadEl.appendChild(sectionHeadDescriptionEl);
+		sectionHeadEl.appendChild(cardsSummaryTitleEl);
+		sectionHeadEl.appendChild(cardsSummarySubtitleEl);
+		sectionHeadEl.appendChild(cardsSummaryDescriptionEl);
 
 		/* section body */
 		const sectionBodyEl = this.createElement('div', 'section__body');
