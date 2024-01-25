@@ -172,13 +172,13 @@ class Section extends Component {
 			'cards-summary__subtitle'
 		);
 
-		const sectionHeadSubtitleTextEl = this.createElement(
+		const cardsSummarySubtitleTextEl = this.createElement(
 			'strong',
 			null,
 			'Powered by Technology'
 		);
 
-		cardsSummarySubtitleEl.appendChild(sectionHeadSubtitleTextEl);
+		cardsSummarySubtitleEl.appendChild(cardsSummarySubtitleTextEl);
 
 		const cardsSummaryDescEl = this.createElement(
 			'p',
