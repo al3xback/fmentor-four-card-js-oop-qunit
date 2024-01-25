@@ -180,7 +180,7 @@ class Section extends Component {
 
 		cardsSummarySubtitleEl.appendChild(sectionHeadSubtitleTextEl);
 
-		const cardsSummaryDescriptionEl = this.createElement(
+		const cardsSummaryDescEl = this.createElement(
 			'p',
 			'cards-summary__desc',
 			'Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful'
@@ -188,7 +188,7 @@ class Section extends Component {
 
 		sectionHeadEl.appendChild(cardsSummaryTitleEl);
 		sectionHeadEl.appendChild(cardsSummarySubtitleEl);
-		sectionHeadEl.appendChild(cardsSummaryDescriptionEl);
+		sectionHeadEl.appendChild(cardsSummaryDescEl);
 
 		/* section body */
 		const sectionBodyEl = this.createElement('div', 'section__body');
