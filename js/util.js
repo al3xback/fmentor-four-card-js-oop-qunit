@@ -64,7 +64,7 @@ class CardItem extends Component {
 	render() {
 		const cardItemEl = this.createElement(
 			'div',
-			`card__list-item card__list-item--${this.item.id}`
+			`card card--${this.item.id}`
 		);
 
 		const cardItemTitleEl = this.createElement(
@@ -135,10 +135,10 @@ class CardList extends Component {
 	];
 
 	render() {
-		const cardListEl = this.createElement('div', 'card__list');
+		const cardListEl = this.createElement('div', 'cards');
 
 		for (const cardBlock of this.cardBlocks) {
-			const cardBlockEl = this.createElement('div', 'card__list-block');
+			const cardBlockEl = this.createElement('div', 'cards__block');
 
 			for (const item of cardBlock.items) {
 				const cardItem = new CardItem(item);
@@ -163,13 +163,13 @@ class Section extends Component {
 
 		const sectionHeadTitleEl = this.createElement(
 			'h2',
-			'section__title',
+			'cards-summary__title',
 			'Reliable, efficient delivery'
 		);
 
 		const sectionHeadSubtitleEl = this.createElement(
 			'p',
-			'section__subtitle'
+			'cards-summary__subtitle'
 		);
 
 		const sectionHeadSubtitleTextEl = this.createElement(
@@ -182,7 +182,7 @@ class Section extends Component {
 
 		const sectionHeadDescriptionEl = this.createElement(
 			'p',
-			'section__desc',
+			'cards-summary__desc',
 			'Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful'
 		);
 

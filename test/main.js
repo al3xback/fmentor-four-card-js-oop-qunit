@@ -76,7 +76,7 @@ QUnit.module('DOM', (hooks) => {
 		const cardItemEl = cardItem.render();
 		document.body.appendChild(cardItemEl);
 
-		const isCardItemElExist = !!document.querySelector('.card__list-item');
+		const isCardItemElExist = !!document.querySelector('.card');
 		assert.ok(isCardItemElExist);
 	});
 
@@ -85,7 +85,7 @@ QUnit.module('DOM', (hooks) => {
 		const cardListEl = cardList.render();
 		document.body.appendChild(cardListEl);
 
-		const isCardListElExist = !!document.querySelector('.card__list');
+		const isCardListElExist = !!document.querySelector('.cards');
 		assert.ok(isCardListElExist);
 	});
 
