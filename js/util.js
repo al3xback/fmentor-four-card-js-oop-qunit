@@ -161,24 +161,26 @@ class Section extends Component {
 		/* section head */
 		const sectionHeadEl = this.createElement('div', 'section__head');
 
-		const cardsSummaryTitleEl = this.createElement(
-			'h2',
-			'cards-summary__title',
-			'Reliable, efficient delivery'
-		);
+		const cardsSummaryEl = this.createElement('div', 'cards-summary');
 
 		const cardsSummarySubtitleEl = this.createElement(
 			'p',
-			'cards-summary__subtitle'
+			'cards-summary__subtitle',
+			'Reliable, efficient delivery'
 		);
 
-		const cardsSummarySubtitleTextEl = this.createElement(
+		const cardsSummaryTitleEl = this.createElement(
+			'h2',
+			'cards-summary__title'
+		);
+
+		const cardsSummaryTitleTextEl = this.createElement(
 			'strong',
 			null,
 			'Powered by Technology'
 		);
 
-		cardsSummarySubtitleEl.appendChild(cardsSummarySubtitleTextEl);
+		cardsSummaryTitleEl.appendChild(cardsSummaryTitleTextEl);
 
 		const cardsSummaryDescEl = this.createElement(
 			'p',
@@ -186,9 +188,11 @@ class Section extends Component {
 			'Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful'
 		);
 
-		sectionHeadEl.appendChild(cardsSummaryTitleEl);
-		sectionHeadEl.appendChild(cardsSummarySubtitleEl);
-		sectionHeadEl.appendChild(cardsSummaryDescEl);
+		cardsSummaryEl.appendChild(cardsSummarySubtitleEl);
+		cardsSummaryEl.appendChild(cardsSummaryTitleEl);
+		cardsSummaryEl.appendChild(cardsSummaryDescEl);
+
+		sectionHeadEl.appendChild(cardsSummaryEl);
 
 		/* section body */
 		const sectionBodyEl = this.createElement('div', 'section__body');
